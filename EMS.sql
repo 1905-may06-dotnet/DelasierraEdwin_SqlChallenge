@@ -28,3 +28,8 @@ INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
 VALUES (401, 'Michael', 'Scott', 'TWSH3SA1D', 800),
 		(402, 'Dwight', 'Schrute', 'B3ATFARM9', 801),
 		(403, 'Pam', 'Beasley', '4Y3RS2JIM', 802);
+		
+INSERT INTO Department(ID, Name, Location)
+VALUES (800, 'Management', 'New York'),
+		(801, 'Sales', 'Scranton'),
+		(802, 'Reception', 'Scranton');
