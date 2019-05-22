@@ -53,4 +53,10 @@ VALUES	(4, 410, 50000.00, 'Fifth Avenue', 'Suite 301', 'New York', 'NY', 'US'),
 
 SELECT * FROM Employee WHERE DeptID=810;
 
-SELECT SUM(Salary) FROM EmpDetails WHERE 
+SELECT SUM(Salary) FROM EmpDetails WHERE EmployeeID IS IN Department.Name = 'Marketing';
+
+SELECT COUNT() FROM Employee GROUP BY DeptID;
+
+UPDATE EmpDetails
+SET Salary = 90000.00
+WHERE EmpID = 410
