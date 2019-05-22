@@ -24,4 +24,7 @@ CREATE TABLE EmpDetails(
 	Country varchar(30)
 	);
 	
-	
+INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
+VALUES (401, 'Michael', 'Scott', 'TWSH3SA1D', 800),
+		(402, 'Dwight', 'Schrute', 'B3ATFARM9', 801),
+		(403, 'Pam', 'Beasley', '4Y3RS2JIM', 802);
