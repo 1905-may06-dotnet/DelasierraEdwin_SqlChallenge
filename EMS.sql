@@ -21,7 +21,8 @@ CREATE TABLE EmpDetails(
 	Address2 varchar(30),
 	City varchar(20),
 	State varchar(2),
-	Country varchar(30)
+	Country varchar(30),
+	FOREIGN KEY (EmployeeID) REFERENCES Employee(ID)
 	);
 	
 INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
@@ -50,3 +51,6 @@ INSERT INTO EmpDetails(ID, EmployeeID, Salary, Address1, Address2, City, State, 
 VALUES	(4, 410, 50000.00, 'Fifth Avenue', 'Suite 301', 'New York', 'NY', 'US'),
 		(5, 411, 75000.00, 'Park Row Drive', '', 'Arlington', 'TX', 'US');
 
+SELECT * FROM Employee WHERE DeptID=810;
+
+SELECT SUM(Salary) FROM EmpDetails WHERE 
