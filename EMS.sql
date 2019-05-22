@@ -1,3 +1,9 @@
+CREATE TABLE Department(
+	ID int PRIMARY KEY,
+	Name varchar(50),
+	Location varchar(100)
+	);
+
 CREATE TABLE Employee(
 	ID int PRIMARY KEY,
 	FirstName varchar(20),
@@ -5,12 +11,6 @@ CREATE TABLE Employee(
 	SSN varchar(9),
 	DeptID int,
 	FOREIGN KEY (DeptID) REFERENCES Department(ID)
-	);
-	
-CREATE TABLE Department(
-	ID int PRIMARY KEY,
-	Name varchar(50),
-	Location varchar(100)
 	);
 	
 CREATE TABLE EmpDetails(
@@ -24,16 +24,16 @@ CREATE TABLE EmpDetails(
 	Country varchar(30),
 	FOREIGN KEY (EmployeeID) REFERENCES Employee(ID)
 	);
-	
-INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
-VALUES  (401, 'Michael', 'Scott', 'TWSH3SA1D', 800),
-		(402, 'Dwight', 'Schrute', 'B3ATFARM9', 801),
-		(403, 'Pam', 'Beasley', '4Y3RS2JIM', 802);
 		
 INSERT INTO Department(ID, Name, Location)
 VALUES  (800, 'Management', 'New York'),
 		(801, 'Sales', 'Scranton'),
 		(802, 'Reception', 'Scranton');
+		
+INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
+VALUES  (401, 'Michael', 'Scott', 'TWSH3SA1D', 800),
+		(402, 'Dwight', 'Schrute', 'B3ATFARM9', 801),
+		(403, 'Pam', 'Beasley', '4Y3RS2JIM', 802);
 		
 INSERT INTO EmpDetails(ID, EmployeeID, Salary, Address1, Address2, City, State, Country)
 VALUES	(1, 401, 80000.00, 'East Eighth Street', 'Apt 6', 'Boulder', 'CO', 'US'),
