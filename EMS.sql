@@ -41,3 +41,6 @@ VALUES	(1, 401, 80000.00, 'East Eighth Street', 'Apt 6', 'Boulder', 'CO', 'US'),
 		
 INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
 VALUES	(410, 'Tina', 'Smith', '999119999', 803);
+
+INSERT INTO Department(ID, Name, Location)
+VALUES	(810, 'Marketing', 'Philadelphia');
