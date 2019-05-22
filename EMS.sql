@@ -43,8 +43,10 @@ INSERT INTO Department(ID, Name, Location)
 VALUES	(810, 'Marketing', 'Philadelphia');
 
 INSERT INTO Employee(ID, FirstName, LastName, SSN, DeptID)
-VALUES	(410, 'Tina', 'Smith', '999119999', 810);
+VALUES	(410, 'Tina', 'Smith', '999119999', 810),
+		(411, 'Angus', 'Beef', 'WH3R3B33F', 810);
 
 INSERT INTO EmpDetails(ID, EmployeeID, Salary, Address1, Address2, City, State, Country)
-VALUES	(4, 410, 50000.00, 'Fifth Avenue', 'Suite 301', 'New York', 'NY', 'US');
+VALUES	(4, 410, 50000.00, 'Fifth Avenue', 'Suite 301', 'New York', 'NY', 'US'),
+		(5, 411, 75000.00, 'Park Row Drive', '', 'Arlington', 'TX', 'US');
 
